@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SYN | Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="pstyle.css">
+    <link rel="stylesheet" type="text/css" href="pstyle1.css">
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        expandImg.src = imgs.src;
+        expandImg.parentElement.style.display = "block";
+      }
+
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
+
+      // Declare a loop variable
+      var i;
+
+      // Full-width images
+      function one() {
+          for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "100%";  // IE10
+          elements[i].style.flex = "100%";
+        }
+      }
+
+      // Two images side by side
+      function two() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "50%";  // IE10
+          elements[i].style.flex = "50%";
+        }
+      }
+
+      // Four images side by side
+      function four() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "25%";  // IE10
+          elements[i].style.flex = "25%";
+        }
+      }
+
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myHeader");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="logowe">
+      <a href="index.html"><img src="pl1.png" alt="Logo" style="max-width: 100%"></a>
+    </div>
+    <br>
+
+    <div class="scroll">
+      <div class="box bpi1">
+        <p class="capi">Media</p>
+        <img src="pi1.jpg" class="galimg" onclick="openModal();myFunction(this);" alt="1">
+        <div class="box bpi2">
+          <p class="capi">Mumbai</p>
+          <img src="pi3.jpg" class="galimg" onclick="openModal();myFunction(this);" alt="2">
+          <div class="box bpi2">
+            <p class="capi">Kota</p>
+            <img src="pi2.jpg" class="galimg" onclick="openModal();myFunction(this);" alt="3">
+            <div class="box bpi2">
+              <p class="capi">Jodhpur</p>
+              <img src="pi3.jpg" class="galimg" onclick="openModal();myFunction(this);" alt="3">
+              <div class="box bpi2">
+                <p class="capi">Ujjain</p>
+                <img src="pi1.jpg" class="galimg" onclick="openModal();myFunction(this);" alt="3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content" id="scroll1">
+        <div>
+          <img id="expandedImg" style="width:100%">
+          <!-- Photo Grid -->
+          <div class="header" id="myHeader">
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+          </div>
+          <div class="row"> 
+            <div class="column">
+              <img src="pic1.png" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pi1.jpg" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pic2.png" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="pic3.png" style="width:100%">
+              <img src="pic2.png" style="width:100%">
+              <img src="pic1.png" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pi1.jpg" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="pic1.png" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pi1.jpg" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pic3.png" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="pic3.png" style="width:100%">
+              <img src="pic2.png" style="width:100%">
+              <img src="pic1.png" style="width:100%">
+              <img src="pi2.jpg" style="width:100%">
+              <img src="pi3.jpg" style="width:100%">
+              <img src="pi1.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <div id="sec1">
+        <div id="sec11">
+          <div>
+              <a href="P61.html"   class="navmar3"><span class="glyphicon glyphicon-phone"><p class="nsi"> Contact us</p></a>
+          </div>
+          <div>
+              <a href="P71.html"   class="navmar3"><span class="glyphicon glyphicon-book"><p class="nsi"> Legal</p> </a>
+          </div>
+        </div >
+        <div id="sec12">
+          <div id="sec121" class="nav navbar-nav">
+              <a href="P33.html"  ><span><i class="fa fa-inr" id="gnm"></i></span></a><br>
+              <a href="P33.html"  ><p class="nsi1">DONATE</p></a>
+          </div>
+          <div id="sec121" class="nav navbar-nav">
+              <a href="P41.html"  ><span class="glyphicon glyphicon-calendar"></span></a><br>
+              <a href="P41.html"  ><p class="nsi1">EVENTS</p></a>
+          </div>
+          <div id="sec121" class="nav navbar-nav">
+              <a href="index.html"  ><span class="glyphicon glyphicon-home"></span></a><br>
+              <a href="index.html"  ><p class="nsi1">HOME</p></a>
+          </div>
+          <div id="sec121" class="nav navbar-nav ">
+              <a href="P8.html"  ><span class="glyphicon glyphicon-heart"></span></a><br>
+              <a href="P8.html"  ><p class="nsi1">ABOUT US</p></a>
+          </div>
+          <div id="sec121" class="nav navbar-nav">
+              <a href="P2.html"  ><span class="glyphicon glyphicon-picture"></span></a><br>
+              <a href="P2.html"  ><p class="nsi1">GALLERY</p></a>
+          </div>
+        </div>
+        <div id="sec13">
+          <div>
+              <p id="npad">Connect On-</p>
+          </div>
+          <div class="sec131">
+              <a href="https://www.facebook.com/"  target="_blank" alt="FB"><img src="pic1.png" style="max-width: 100%"></a>
+          </div>
+          <div class="sec131">
+              <a href="https://www.instagram.com/?hl=en"  target="_blank" alt="insta"><img src="pic3.png" style="max-width: 100%"></a>
+          </div>
+          <div class="sec131">
+              <a href="https://twitter.com/login?lang=en" target="_blank"  alt="twitter"><img src="pic2.png" style="max-width: 100%"></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

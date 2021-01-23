@@ -1,0 +1,50 @@
+.button2{
+  float: center;
+  background-image: none;
+  background-color: #008B8B;
+  color: white;
+}
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #008B8B;
+  color: white;
+  text-align: center;
+  border-color: green;
+}
+.container{
+  margin-top: 50px;
+  margin-right: 60px;
+}
+body
+{
+  background-color:  #f5e0ff;
+}
+.abc
+{
+  color: green;
+  font-size: 25px;
+  margin-top: 200px;
+  text-align: center;
+}
+.def
+{
+  color: green;
+  font-size: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+#logowe{
+  background-color:white;
+  float: left;
+  position: fixed;
+  margin-top: 30px;
+  padding-right: 35px;
+  padding-left: 35px;
+  transition: background-color 2s, transform 2s, box-shadow 2s, background-image 2s;
+}
+#logowe:hover{
+  background-color:transparent;
+  background-image: linear-gradient(to bottom right,transparent, white);
+  transform: scale(1.2,1.2);
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}

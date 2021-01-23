@@ -1,0 +1,60 @@
+.container{
+  margin-top: 12%;
+  margin-right: 16%;
+}
+#quoteDisplay1{
+  margin-top: 36px;
+  text-align: justify;
+  font-size: 1.7vw;
+  font-style: oblique;
+  color: black;
+  font-family: "Times New Roman", Times,"sans-serif";
+  backface-visibility: visible;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right,rgba(183,255,9,.3), rgba(255,255,255,.7)), url('pb4.jpg');
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 40px;
+  padding-left: 30px;
+  box-shadow:  10px 10px rgba(0, 0, 0, 0.6);
+}
+
+#quoteDisplay2{
+  text-align: justify;
+  font-size: 1.7vw;
+  font-style: oblique;
+  color: black;
+  font-family: "Times New Roman", Times,"sans-serif";
+  backface-visibility: visible;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right,rgba(183,255,9,.3), rgba(255,255,255,.7)), url('pb4.jpg');
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 40px;
+  padding-left: 30px;
+  box-shadow:  10px 10px rgba(0, 0, 0, 0.6);
+}
+#quoteDisplay3{
+  text-align: justify;
+  font-size: 1.7vw;
+  font-style: oblique;
+  color: black;
+  font-family: "Times New Roman", Times,"sans-serif";
+  backface-visibility: visible;
+  margin-bottom: 25px;
+  background-image: linear-gradient(to right,rgba(183,255,9,.3), rgba(255,255,255,.7)), url('pb4.jpg');
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-right: 40px;
+  padding-left: 30px;
+  box-shadow:  10px 10px rgba(0, 0, 0, 0.6);
+}
+.btn{
+  margin-top: 60%;
+}
+#abc{
+  width: 100%;
+}
