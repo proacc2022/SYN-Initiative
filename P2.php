@@ -112,8 +112,8 @@
   {
    $dbhost = "localhost";
    $dbuser = "root";
-   $dbpass = "12345";
-   $db = "wp";
+   $dbpass = "1";
+   $db = "w";
    $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
 
    return $conn;
