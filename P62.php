@@ -55,9 +55,9 @@
             function OpenCon()
             {
                $dbhost = "localhost";
-               $dbuser = "id15253107_root";
-               $dbpass = "Wpproject-28";
-               $db = "id15253107_wp";
+               $dbuser = "root";
+               $dbpass = "-28";
+               $db = "id1525";
                $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
      
              return $conn;
@@ -104,10 +104,10 @@
 	$mail->SMTPAuth=true;
 	$mail->SMTPSecure='tls';
     error_reporting(E_ALL ^ E_WARNING); 
-	$mail->Username='syninitiative@gmail.com';
-	$mail->Password='SYN1nitiative';
+	$mail->Username='synive@gmail.com';
+	$mail->Password='SYtive';
 
-	$mail->setFrom('syninitiative@gmail.com','Sarvesh Yatharth Naman');
+	$mail->setFrom('syninitiative@gmail.com','Ok');
 	$mail->addAddress($email);
 	$mail->addReplyTo('syninitiative@gmail.com');
 
