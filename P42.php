@@ -25,9 +25,9 @@
             function OpenCon()
             {
                $dbhost = "localhost";
-               $dbuser = "id15253107_root";
-               $dbpass = "Wpproject-28";
-               $db = "id15253107_wp";
+               $dbuser = "id1oot";
+               $dbpass = "Wpp8";
+               $db = "id1wp";
                $conn = new mysqli($dbhost, $dbuser, $dbpass,$db);
                
               return $conn;
